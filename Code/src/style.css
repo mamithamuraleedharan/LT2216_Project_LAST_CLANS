@@ -1,0 +1,450 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+/* Welcome page background */
+.game-container {
+  position: fixed;    
+  top: 0;            
+  left: 0;           
+  width: 100vw;       
+  height: 100vh;  
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+              url('/pic1.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background 2s ease;
+}
+
+/* Top stats bar */
+.stats-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  border-bottom: 1px solid rgba(255, 100, 0, 0.3);
+  z-index: 200;
+  padding: 0.6rem 2rem;
+  box-sizing: border-box;
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.stats-panel.visible {
+  display: flex;
+}
+.stat-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+}
+.stat-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #888;
+}
+.stat-value {
+  font-size: 0.95rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+/* ALL BACKGROUNDS */
+/*background for the story page*/
+.story-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+              url('/pic2.png');
+  background-size: cover;
+  background-position: center;
+}
+/* background for the players skills selection page */
+.skill-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+              url('/pic3.png');
+  background-size: cover;
+  background-position: center;
+}
+/* background for choosing equipments */
+.equipment-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+              url('/pic4.png');
+  background-size: cover;
+  background-position: center;
+}
+/* background for game page 1 starting location of landing module */
+.gp1_start_location-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+              url('/pic5.png');
+  background-size: cover;
+  background-position: center;
+}
+/* background for game page 2 grounders village */
+.gp2_grounders_village-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+              url('/pic6.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* background for game page 3 grounders */
+.gp3_grounders-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+              url('/pic7.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* background for game page 4 end location (bunker) */
+.gp4_final_location-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+              url('/pic8.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Village 1 - Grounder */
+.village1_grounder-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+              url('/pic6.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Village 1 - Grounder CLoseup */
+.village1_encounter-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+              url('/pic7.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Village 2 - Reaper  */
+.village2_reaper-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+              url('/pic10.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Village 2 - Reaper Encounter (close-up) */
+.village2_encounter-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+              url('/pic11.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Forest with Wild Berries background*/
+.forest-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+              url('/pic9.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Radiation Zone background*/
+.radiation-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+              url('/pic12.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/*Crocodile Pond background */
+.crocodile-bg{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+              url('/pic13.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/*Clear Pond background */
+.pond-bg{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+              url('/pic14.png');
+  background-size: cover;
+  background-position: center;
+}
+/* Valley Bridge background */
+.valley-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+              url('/pic15.png');
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Title for Welcome Page */
+.game-title {
+  font-size: 7rem;
+  font-weight: bold;
+  color: #eff1f3;
+  text-shadow: 0 0 30px rgba(230, 238, 247, 0.8),
+               4px 4px 15px rgba(0, 0, 0, 0.9);
+  letter-spacing: 20px;
+  margin-bottom: 20px;
+}
+
+/* Subtitle for Welcome Page */
+.game-subtitle {
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+}
+
+.hiding-title {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+/* Intro story */
+.intro_story {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.intro_story.visible {
+  display: flex;
+  animation: fadeIn 1s ease;
+}
+
+.story-box {
+  width: 1000px;
+  min-height: 100px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 2rem 2.5rem;
+  text-align: center;
+}
+
+#story-line {
+  font-size: 3.2rem;
+  line-height: 1.8;
+  color: #ffffff;
+  font-family: 'Georgia', serif;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  margin: 0;
+}
+
+#story-line.visible {
+  opacity: 1;
+}
+
+/* Skills selection  page */
+.player_skills_page {
+  display: none;
+  width: 100%;
+}
+
+.player_skills_page.visible {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1s ease;
+  width: 100%;
+  height: 100vh;
+  padding-top: 2rem;
+}
+
+.skills_title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #eff1f3;
+  text-shadow: 0 0 30px rgba(230, 238, 247, 0.8),
+               4px 4px 15px rgba(0, 0, 0, 0.9);
+  letter-spacing: 15px;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.skills_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 90%;
+  max-width: 1100px;
+}
+
+.skill_box {
+  color: #ffffff;
+  background-color: rgba(15, 14, 14, 0.92);
+  border: 2px solid rgba(255, 100, 0, 0.5);
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 20px rgba(255, 100, 0, 0.15);
+}
+
+.skill_box:hover {
+  border-color: #ff6400;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(255, 100, 0, 0.5);
+  background-color: rgba(40, 20, 5, 0.95);
+}
+
+.skill_icon {
+  font-size: 4.5rem;
+  margin-bottom: 16px;
+}
+
+.skill_box h2 {
+  font-size: 2.0rem;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+  color: #ff8c42;
+}
+
+.skill_box p {
+  font-size: 1.5rem;
+  color: #68786e;
+  margin-bottom: 5px;
+}
+
+.skill_box p.skill_drawback {
+  color: #ff4444;
+  font-style: italic;
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+/* Equipment page */
+.player_equipment_page {
+  display: none;
+  width: 100%;
+}
+
+.player_equipment_page.visible {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1s ease;
+  width: 100%;
+  height: 100vh;
+  padding-top: 2rem;
+}
+
+.equipment_title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #eff1f3;
+  text-shadow: 0 0 30px rgba(230, 238, 247, 0.8),
+               4px 4px 15px rgba(0, 0, 0, 0.9);
+  letter-spacing: 15px;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.health_info {
+  color: #99ff99;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-top: 8px;
+}
+
+/* Buttons*/
+.card {
+  padding: 2em;
+}
+.card.hidden {
+  display: none;
+}
+
+/* Button */
+button {
+  font-size: 0.5rem;
+  padding: 8px 20px;
+  background: linear-gradient(135deg, #7b7c7d 0%, #777779 100%);
+  color: white;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #4a90e2 100%);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(87, 88, 88, 0.8);
+}
+
+/* Continue button */
+.continue-button {
+  display: none;
+  font-size: 0.5rem;
+  padding: 8px 20px;
+  background: linear-gradient(135deg, #7b7c7d 0%, #777779 100%);
+  color: white;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+}
+
+.continue-button.visible {
+  display: inline-block;
+  animation: fadeIn 1s ease;
+}
+
+.continue-button:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.6);
+}
+#story-line {
+  white-space: pre-line;
+}
+
+.intro_story.visible .story-box {
+  min-height: 160px;
+}
+
+/* Village 1 - Reaper background */
+.village1_reaper-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+              url('/pic11.png');
+  background-size: cover;
+  background-position: center;
+}
