@@ -8,7 +8,7 @@ But, Earth is not empty.There are different clans of people who survived the apo
 Your mission : Survive. Reach Bunker Zero.
 
 ## Play the pre-deployed game
-Link : [dev.clasp.gu.se/mltgpuweb/gusmamitmu](dev.clasp.gu.se/mltgpuweb/gusmamitmu)
+Link : [Game](https://dev.clasp.gu.se/mltgpuweb/gusmamitmu/)
 
 ## Demo Recording
 Link : [Recording](https://github.com/mamithamuraleedharan/LT2216_Project_LAST_CLANS/tree/main/Demo%20Recording)
