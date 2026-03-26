@@ -11,10 +11,10 @@ Your mission : Survive. Reach Bunker Zero.
 Link : [dev.clasp.gu.se/mltgpuweb/gusmamitmu](dev.clasp.gu.se/mltgpuweb/gusmamitmu)
 
 ## Demo Recording
-Link : [https://github.com/mamithamuraleedharan/LT2216_Project_LAST_CLANS/tree/main/Demo%20Recording](Recording)
+Link : [Recording](https://github.com/mamithamuraleedharan/LT2216_Project_LAST_CLANS/tree/main/Demo%20Recording)
 
 ## Presentation 
-Link : [https://github.com/mamithamuraleedharan/LT2216_Project_LAST_CLANS/blob/main/Presentation.pdf](Presentation)
+Link : [Presentation](https://github.com/mamithamuraleedharan/LT2216_Project_LAST_CLANS/blob/main/Presentation.pdfn)
 
 ## Setup to run locally
 
