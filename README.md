@@ -14,7 +14,7 @@ Link : [dev.clasp.gu.se/mltgpuweb/gusmamitmu](dev.clasp.gu.se/mltgpuweb/gusmamit
 Link : [Recording](https://github.com/mamithamuraleedharan/LT2216_Project_LAST_CLANS/tree/main/Demo%20Recording)
 
 ## Presentation 
-Link : [Presentation](https://github.com/mamithamuraleedharan/LT2216_Project_LAST_CLANS/blob/main/Presentation.pdfn)
+Link : [Presentation](https://github.com/mamithamuraleedharan/LT2216_Project_LAST_CLANS/blob/main/Presentation.pdf)
 
 ## Setup to run locally
 
