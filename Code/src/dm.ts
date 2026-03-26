@@ -874,17 +874,16 @@ GameWon: {
 GameOver: {
   entry: {
     type: "spst.speak",
-    params: ({ context }) => ({
+    params: {
       utterance: `You have died. Game over. Press the button to play again.`,
-    }),
-  },
+    }},
   on: { SPEAK_COMPLETE: "Done" },
 },
 
 Done: {
   on: { CLICK: "Restart" },
 },
-// restarting to play again, re-initializing all variables again.
+// restarting to play again
 Restart: {
   entry: assign(() => ({
     lastResult:    null,
